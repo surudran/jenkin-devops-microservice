@@ -26,12 +26,12 @@ pipeline {
 		}
 		stage('Test'){
 			steps {
-				echo "mvn Test"
+				sh "mvn Test"
 			}
 		}
 		stage('Integration Test'){
 			steps {
-				echo "mvn failsafe:Integration-test failsafe:verify"
+				sh "mvn failsafe:Integration-test failsafe:verify"
 			}
 		}
 	} 
