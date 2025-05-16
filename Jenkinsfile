@@ -6,7 +6,7 @@ pipeline {
 	// 	dockerHome = tool 'myDocker'
 	// 	mavenHome = tool 'myMaven'
 	// 	PATH = "$dockerHome/bin:$mavenHome/bin:$PATH"
-	}
+	//}
 	stages {
 		stage('Checkout'){
 			steps {
@@ -34,7 +34,7 @@ pipeline {
 		// 		sh "mvn failsafe:Integration-test failsafe:verify"
 		// 	}
 		// }
-	//} 
+	} 
 	post {
 		always {
 			echo 'Iam awesome.  I run always'
