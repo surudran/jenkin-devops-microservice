@@ -34,7 +34,7 @@ pipeline {
 		// 		sh "mvn failsafe:Integration-test failsafe:verify"
 		// 	}
 		// }
-	} 
+	//} 
 	post {
 		always {
 			echo 'Iam awesome.  I run always'
